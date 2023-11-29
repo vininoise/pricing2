@@ -10,8 +10,6 @@ modelo = load('ML.joblib')
 
 class Pricing(Resource):
     @app.route("/")
-    def hello_world():
-        return "<p>Hellom world<p>"
     def post(self):
         args = request.get_json(force=True)
 
